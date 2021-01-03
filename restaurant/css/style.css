@@ -39,7 +39,7 @@
     src: url(../fonts/LexendDeca-Regular.ttf);
 }
 
-@media (min-width:350px){
+@media (min-width:200px){
 
     .mt-1{
         margin-top: 10px;
