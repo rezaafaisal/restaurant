@@ -1,0 +1,844 @@
+
+ @font-face {
+    font-family:paficio;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family:Timmana ;
+    src: url(../fonts/Timmana-Regular.ttf);
+}
+
+@font-face{
+    font-family:Bad Script ;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+@font-face{
+    font-family: Carter One;
+    src: url(../fonts/CarterOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: Sulphur Point;
+    src: url(../fonts/SulphurPoint-Regular.ttf);
+}
+
+@font-face{
+    font-family: Istokweb;
+    src: url(../fonts/IstokWeb-Regular.ttf);
+}
+
+@font-face{
+    font-family: Istokweb Bold;
+    src: url(../fonts/IstokWeb-Bold.ttf);
+}
+
+@font-face{
+    font-family: Lexend Deca;
+    src: url(../fonts/LexendDeca-Regular.ttf);
+}
+
+@media (min-width:450px){
+
+    .mt-1{
+        margin-top: 10px;
+    }
+
+    .mt-2{
+        margin-top: 20px;
+    }
+
+    .mt-3{
+        margin-top: 30px;
+    }
+
+    .mt-4{
+        margin-top: 40px;
+    }
+
+    .mt-5{
+        margin-top: 50px;
+    }
+   
+
+    html{
+        font-size: 5px;
+    }
+
+    .container{
+        width: 100%;
+        margin: auto;
+        font-size: 3rem;
+    }
+
+    .header, .header .nav ul, .banner, .main, .transaction, .main .card, .main .card-menu, .card-menu .card-food, .food-fill, .food-fill-btn, .footer, .footer-container, .footer-container .footer-fill, .card-footer, .card-footer ul, .card-footer ul li, .last-footer, .card-trx, .card-trx .detail, .card-trx .detail .porsi, .card-trx .form-group, .card-trx .form-group form, .card-trx .detail .porsi .count, .pesan
+    {
+        display: flex;
+    } 
+
+    .header{
+        width: 100%;
+        height: 50px;
+        background-color: #000000;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .main-logo{
+        padding-left: 5%;
+    }
+
+    .header .main-logo span{
+        font-size: 5rem;
+        font-family: paficio;
+        color: #f0f0f0;
+        border-bottom: 2px solid darkorange;
+    }
+
+    .header .nav{
+        padding-right: 10%;
+        width: 40%;
+    }
+
+    .header .nav ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+    .header .nav ul li a{
+        color: #f0f0f0;
+        font-size: 3rem;
+        text-decoration: none;
+        font-family:bad script;
+    }
+
+    .header .nav ul li a:hover{
+        color: darkorange;
+    }
+
+    .banner{
+        width:100%;
+        height: 200px;
+        background-image: url(../images/ui/banner1.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #f0f0f0;
+        font-family: timmana;
+    }
+
+    .banner span{
+        font-size: 5.2rem;
+    }
+
+    .banner p{
+        font-size: 3.2rem;
+        margin: 0px;
+    }
+
+    .main{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .transaction{
+        flex-direction: column;
+    }
+
+    .main .card{
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+
+    .main .form{
+
+    }
+
+    .main .card-form{
+        height: 500px;
+    }
+    
+    .card-trx{
+        flex-direction: column;
+        height: 100%;
+    }
+    .card-trx .detail{
+
+    }
+    .card-trx .detail img{
+        width: 200px;
+    }
+
+    .card .card-title{
+        font-size: 5rem;
+        color: #505050;
+        font-family: timmana;
+    }
+
+    .card-menu{
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+
+    .card-trx .detail .porsi{
+        width: 200px;
+        flex-direction: column;
+        font-size: 3rem;
+        justify-content: space-between;
+        margin-left: 10px;
+        color: #1f1f1f;
+        font-family: lexend deca;
+    }
+
+    .detail .porsi .food-name{
+        font-family: carter one;
+        color: darkorange;
+        font-size: 3.5rem;
+
+    }
+
+    .detail .porsi .food-desc{
+        padding: 0px;
+        font-size: 2.5rem;
+        margin: 0px;
+        height: 50%;
+    }
+
+    .detail .porsi .food-desc p{
+        margin: 0px;
+    }
+
+    .detail .porsi .food-desc .hidden-desc{
+        display: none;
+    }
+
+    .detail .porsi .price{
+        color: darkorange;
+    }
+
+    .detail .porsi .count{
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .ui-porsi {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .ui-porsi button{
+        width: 25px;
+        height: 25px;
+        border: none;
+        background: none;
+        background-size: cover;
+        background-position: center;
+        filter: invert(20%);
+    }
+
+    .ui-porsi button:focus{
+        outline: none;
+    }
+
+
+    .ui-porsi input{
+        text-align: center;
+        background: none;
+        border: none;
+        font-family: lexend deca;
+        color: #1f1f1f ;
+        width: 25px;
+        margin-left:5px ;
+        margin-right: 5px;
+        border-bottom: 2px solid darkorange;
+    }
+
+    .ui-porsi .plus{
+        background-image: url(../images/ui/plus.png);  ;
+    }
+
+    .ui-porsi .minus{
+        background-image: url(../images/ui/minus.png);  ;
+    }
+
+    .card-trx .form-group{
+        
+        width: 100%;
+        height: 100%;
+        /* background-color: lawngreen; */
+    }
+
+    .form-group form{
+        flex-direction:column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        /* background-color:darkkhaki; */
+    }
+
+    .form-group form input{
+        height: 35px;
+        padding-left: 5px;
+        border:1px solid #929292;
+        font-size: 3.2rem;
+    }
+
+    .form-group form input:focus{
+        outline:none;
+        background-color: whitesmoke;
+    }
+
+    .form-group textarea:focus{
+        outline: none;
+        background-color: whitesmoke;
+    }
+
+    .form-group form textarea{
+        height: 100px;
+        font-size: 3.2rem;
+        font-family: arial ;
+        border:1px solid #929292;
+        resize: none;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .form-group form .pesan{
+        justify-content: flex-end;
+    }
+
+    .form-group form button{
+        width: 80px;
+        height: 35px;
+        border: none;
+        font-size: 3rem ;
+        font-family: arial;
+        background-color: darkorange;
+        color: #f0f0f0;
+    }
+
+    .form-group form button:hover{
+        background-color: #be5b37;
+    }
+
+    .form-group form button:focus{
+        outline: none;
+    }
+
+    .main .form .card .card-title{
+
+    }
+
+    .other-menu{
+        margin-top: 100px;
+    }
+
+    .other-menu .card-menu{
+        height: 300px;
+    }
+
+    .card-menu img{
+        width: 100px;
+        height: 70px;
+    }
+
+    .card-menu .card-food{
+        height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #505050;
+        width: 100%;
+    }
+
+    .food-fill-btn{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .food-fill-btn .food-fill{
+        flex-direction: column;
+        margin-left: 10px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .food-fill .food-name{
+        font-family: carter one;
+        color: darkorange;
+    }
+
+    .food-fill p{
+        margin: 0px;
+        font-family: sulphur point;
+        color: #505050;
+    }
+
+    .food-fill .price{
+        font-family: arial;
+        color: #505050;
+    }
+     
+    .food-order-btn{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .food-order-btn a button{
+        width: 80px;
+        height: 30px;
+        border: none;
+        font-size: 3rem ;
+        font-family: arial;
+        background-color: darkorange;
+        color: #f0f0f0;
+    }
+
+    .food-order-btn a button:focus{
+        outline: none;
+    }
+
+    .food-order-btn a button:hover{
+        background-color: #be5b37 ;
+    }
+
+    .footer{
+        width: 100%;
+        height: 600px;
+        background-color:#1f1f1f;
+        color: white;
+    }
+
+    .footer .footer-container{
+        width: 100%;
+        height: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .footer-container .logo{
+        font-family: paficio;
+        font-size: 5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .footer-fill{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .card-footer{
+        width: 100%;
+        color: #f0f0f0;
+        flex-direction: column;
+    }
+
+    .footer-container .card-footer .footer-title{
+        font-family: lexend deca;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .card-footer ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .card-footer ul li{
+        height: 30px;
+        align-items: center;
+    }
+
+    .card-footer ul li img{
+        height: 50%;
+        filter: invert();
+    }
+
+    .card-footer ul li p{
+        margin-left: 10px;
+        font-family: lexend deca;
+        font-size: 2.5rem;
+    }
+
+    .card-footer ul li a, .card-footer ul li p a{
+        text-decoration: none;
+        font-family: lexend deca;
+        font-size: 2.5rem;
+        color: #f0f0f0;
+
+    }
+
+    .card-footer ul li a:hover{
+        color: darkorange;
+    }
+
+    .card-footer ul li p a:hover{
+        color: darkorange;
+    }
+
+    .last-footer{
+        height: 85px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #f0f0f0f0;
+    }
+
+    .last-footer span{
+        font-family: lexend deca;
+        font-size: 2.5rem;
+        color: #f0f0f0;
+    }
+
+}
+
+/* For Tab */
+@media (min-width:640px){
+    .container{
+        width: 95%;
+    }
+
+    .header{
+        height: 70px;
+    }
+
+    .header .main-logo span{
+        font-size: 6.5rem;
+    }
+
+    .header .nav ul li a{
+        font-size: 3.5rem;
+    }
+
+    .banner{
+        height: 250px;
+    }
+
+    .banner span{
+        font-size: 6rem;
+    }
+
+    .banner p{
+        font-size: 4rem;
+    }
+
+    .main .card{
+        width: 100%;
+    }
+
+    .food-fill-btn{
+        flex-direction: column;
+    }
+
+    .card .card-title{
+        font-size: 6rem;
+        color: #505050;
+        font-family: timmana;
+    }
+
+    .card-menu{
+        width: 100%;
+        height: 400px;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .other-menu .card-menu{
+        height: 267px;
+    }
+
+    .card-menu img{
+        width: 130px;
+        height:100%;
+    }
+
+    .card-menu .card-food{
+        height: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #505050;
+        width: 48%;
+    }
+
+    .food-fill-btn .food-order-btn{
+        justify-content: flex-end;
+    }
+
+    .food-order-btn a button{
+        width: 81px;
+        height: 31px;
+    }
+
+    .footer{
+        height: 400px;
+    }
+
+    .footer-container .logo{
+        font-size: 6.5rem;
+    }
+
+    .footer-container .footer-fill{
+        height: 80%;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    .footer-container .card-footer{
+        width: 32%;
+    }
+
+    .footer-container .card-footer .footer-title{
+        font-family: lexend deca;
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+
+    .card-footer ul li{
+        height: 35px;
+    }
+    .card-footer ul li p{
+        font-size: 2.7rem;
+    }
+
+    .card-footer ul li a, .card-footer ul li p a{
+        font-size: 2.7rem;
+    }
+
+    .last-footer{
+        height: 85px;
+    }
+
+    .last-footer span{
+        font-size: 2.7rem;
+    }
+
+    .main .card-form{
+        height: 600px;
+    }
+    
+    .card-trx{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .card-trx .detail{
+        height: 220px;
+        width: 100%;
+
+    }
+    .card-trx .detail img{
+        width: 350px;
+        height: 100%;
+    }
+
+    .card-trx .detail .porsi{
+        width: 300px;
+    }
+
+    .detail .porsi .food-name{
+        font-size: 5rem;
+    }
+
+    .detail .porsi .food-desc{
+        font-size: 3rem;
+        height: 70%;
+    }
+
+    .detail .porsi .food-desc .hidden-desc{
+        display: contents;
+    }
+    
+    .form-group form{
+    }
+
+    .form-group form input{
+    }
+
+    .form-group form textarea{
+        height: 130px;
+    }
+
+    .card-trx .form-group{
+        margin-top: 30px;
+        max-width: 700px;
+    }
+
+    .form-group form{
+        flex-direction:column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+/* For Dekstop */
+@media (min-width:1000px){
+    .container{
+        width: 90%;
+    }
+
+    .header {
+        height: 75px;
+    }
+
+    .header .nav{
+        width: 30%;
+    }
+
+    .header .nav ul li a{
+        font-size: 4rem;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+    .banner span{
+        font-size: 7.5rem;
+    }
+
+    .banner p{
+        font-size: 5.5rem;
+    }
+
+
+    .card .card-title{
+        font-size: 6rem;
+        color: #505050;
+        font-family: timmana;
+    }
+
+    .card-menu{
+        height: 330px;
+    }
+
+    .other-menu .card-menu{
+        height: 165px;
+    }
+
+    .card-menu .card-food{
+            height: 116px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #505050;
+            width: 33%;
+    }
+    .card-menu .card-food img{
+        width: 150px;
+    }
+
+    
+
+    .food-fill-btn .food-order-btn{
+        justify-content: flex-end;
+    }
+
+    .food-order-btn a button{
+        width: 83px;
+        height: 33px;
+    }
+
+    .footer{
+        height: 370px;
+    }
+
+    .footer-container .logo{
+        font-size: 7rem;
+    }
+
+
+    .footer-container .card-footer{
+        width: 25%;
+    }
+
+    .main .card-form{
+        height: 400px;
+    }
+    .card-trx{
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .card-trx .detail{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .card-trx .detail .food-img{
+        width:500px;
+        height: 220px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-trx .detail .food-img img{
+        min-width: 500px;
+        height: 300px;
+    }
+
+    .card-trx .detail .porsi{
+        width: 500px;
+    }
+
+    .detail .porsi .food-name{
+        font-size: 5rem;
+    }
+
+    .detail .porsi .food-desc{
+        font-size: 3rem;
+        height: 70%;
+    }
+
+    .detail .porsi .food-desc .hidden-desc{
+        display: none;
+    }
+
+    .form-group form{
+    }
+
+    .form-group form input{
+    }
+
+    .form-group form textarea{
+        height: 180px;
+    }
+
+    .card-trx .form-group{
+        width: 100%;
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    .form-group form{
+        flex-direction:column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+}

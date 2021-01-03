@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="main-logo"><span>Restaurant</span></div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Order Online</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <span>Searching for lokal and western food?</span>
+        <p>Restaurant is the best way you can get!</p>
+    </div>
+    <div class="main transaction">
+        <div class="card card-form">
+            <span class="card-title">Order Transaction</span>
+            <div class="card-trx">
+                <div class="detail">
+                    <div class="food-img">
+                        <img src="images/foods/drink4.jpg" alt="">
+                    </div>
+                    <div class="porsi">
+                        <span class="food-name">Multi Berrys Juice</span>
+                        <span class="food-desc">
+                            <p>Bermacam buah bery memberikan rasa yang pernah ada sebelumnya.</p>
+                        </span>
+                        <span class="price">IDR 30.000,00</span>
+                        <div class="count">
+                            <span>Jumlah :</span>
+                            <div class="ui-porsi">
+                                <button class="minus" onclick="down('0') "></button>
+                                <input type="text" id="porsi"  value="1" readonly/>
+                                <button class="plus" onclick="up('10')"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <form action="">
+                        <input type="text" placeholder="Nama Pemesan" required>
+                        <input type="email" placeholder="Email">
+                        <textarea name="" placeholder="Alamat" required></textarea>
+                        <div class="pesan">
+                            <button onclick="">Beli</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card other-menu">
+            <span class="card-title mt-5">New Foods Menu</span>
+            <div class="card-menu">
+                <div class="card-food">
+                    <img src="images/foods/food3.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Cheese Burger</span>
+                            <p>Cita rasa keju yang mantap</p>
+                            <span class="price">Harga : 50.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="food3.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-food">
+                    <img src="images/foods/food4.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Mini Pizza</span>
+                            <p>Mini tapi luar biasa</p>
+                            <span class="price">Harga : 35.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="food4.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-food">
+                    <img src="images/foods/food6.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Super Hotdog</span>
+                            <p>Cocok untuk berdua</p>
+                            <span class="price">Harga : 40.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="food6.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card other-menu ">
+            <span class="card-title mt-3">New Drinks Menu</span>
+            <div class="card-menu">
+                <div class="card-food">
+                    <img src="images/foods/drink6.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Skyblue Nigth</span>
+                            <p>Mewah dan luar biasa</p>
+                            <span class="price">Harga : 50.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="drink6.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-food">
+                    <img src="images/foods/drink5.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Raspberry Cream</span>
+                            <p>Kejutan dilidah</p>
+                            <span class="price">Harga : 28.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="drink5.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-food">
+                    <img src="images/foods/drink2.jpg" alt="">
+                    <div class="food-fill-btn">
+                        <div class="food-fill">
+                            <span class="food-name">Lemon Juice</span>
+                            <p>Kecut seperti sikapmu</p>
+                            <span class="price">Harga : 20.000,00</span>
+                        </div>
+                        <div class="food-order-btn">
+                            <a href="drink2.html"><button>Pilih</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <span class="logo">Restaurant</span>
+            <div class="footer-fill">
+                <div class="card-footer">
+                    <span class="footer-title">Customer Service</span>
+                    <ul>
+                        <li>
+                            <img src="images/ui/call.png" alt="">
+                            <p>021-3554-9275</p>
+                        </li>
+                        <li>
+                            <img src="images/ui/email.png" alt="">
+                            <p>cs@restaurant.com</p>
+                        </li>
+                        <li>
+                            <img src="images/ui/loc.png" alt="">
+                            <p>Jln. Sendiri, Kolaka</p>
+                        </li>
+                        <li>
+                            <img src="images/ui/clock.png" alt="">
+                            <p>Setiap Hari (08.00 - 22.00)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="footer-title">Social Media</span>
+                    <ul>
+                        <li>
+                            <img src="images/ui/fb2.png" alt="">
+                            <p><a href="">Facebook</a></p>
+                        </li>
+                        <li>
+                            <img src="images/ui/twitter2.png" alt="">
+                            <p><a href="">Twitter</a></p>
+                        </li>
+                        <li>
+                            <img src="images/ui/ig2.png" alt="">
+                            <p><a href="">Instagram</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="footer-title">Lainnya</span>
+                    <ul>
+                        <li>
+                            <a href="">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="">Kebijakan Privasi</a>
+                        </li>
+                        <li>
+                            <a href="">Syarat dan Ketentuan </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="last-footer">
+                <span>Copyrigth &copy; Restaurant Indonesia 2020</span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
