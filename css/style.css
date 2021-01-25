@@ -42,7 +42,7 @@
 
 body{
     margin: 0;
-    overflow: hidden;
+    
 }
 
 @media (min-width:350px){
@@ -171,6 +171,7 @@ body{
     .container{
         width: 100%;
         margin: auto;
+        overflow-x: hidden;
         font-size: 3rem;
     }
 
