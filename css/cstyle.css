@@ -1,0 +1,171 @@
+
+.main-contact, .card-contact, .card-contact-header, .card-contact form{
+    display: flex;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input   :-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select  :-webkit-autofill,
+select  :-webkit-autofill:hover,
+select  :-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* .bb-orange{
+    width: 50%;
+    padding-top:2px;
+    margin-top: 5px;
+    background-color: #505050;
+} */
+
+.black{
+    color: #505050;
+}
+
+
+@media (min-width:350px){
+
+    .main-contact{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-contact:nth-child(2){
+        height: 290px;
+    }
+
+    .card-contact{
+        flex-direction: column;
+        width: 95%;
+        margin-top: 20px;
+        justify-content: space-between;
+        /* background-color: cadetblue; */
+        height: 350px;
+    }
+
+    .card-contact-header{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 50px;
+    }
+
+    .contact-title{
+        font-family: timmana;
+        font-size: 5rem;
+        height: 30px;
+    }
+
+    .contact-desc{
+        font-family: lexend deca;
+        font-size: 3rem;
+    }
+
+    .card-contact-body{
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+    }
+
+    .card-contact-body .fill-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-contact-body .fill-body .title{
+        font-family: timmana;
+        font-size: 3.5rem;
+        color: darkorange;
+    }
+
+    .card-contact-body .fill-body .desc{
+        font-family: lexend deca;
+        font-size: 2.5rem;
+        width: 60%;
+        color: #505050;
+    }
+
+    .card-contact form{
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-around;
+        /* background-color: darkcyan; */
+    }
+
+    .card-contact form input{
+        height: 35px;
+        padding-left: 5px;
+        font-family: lexend deca;
+        border: none;
+        border-bottom: 2px solid darkorange;
+    }
+
+    .card-contact form input:focus{
+        /* background-color: #f0f0f0; */
+        outline: none;
+    }
+
+    .card-contact form textarea{
+        height: 70px;
+        
+        font-family: lexend deca;
+        padding-left: 5px;
+        padding-top: 5px;
+        resize: none;
+        border: none;
+        border-bottom: 2px solid darkorange;
+    }
+
+    .card-contact form textarea:focus{
+        outline: none;
+        /* background-color:#f0f0f0 ; */
+    }
+
+    .card-contact form button{
+        height: 35px ;
+        background-color: darkorange;
+        font-family: lexend deca;
+        width: 120px;
+        color: white;
+        border: none;
+    }
+
+    .card-contact form button:hover{
+        background-color: #be5b37;
+    }
+    .card-contact form button:focus{
+        outline: none;
+    }
+}
+
+@media (min-width:640px){
+    .main-contact{
+        /* width: 100%; */
+        align-items:unset; 
+        justify-content: space-between;
+        /* background-color: darkred; */
+        flex-direction: row;
+    }
+
+    .card-contact{
+        width: 45%;
+    }
+
+    .card-contact-body .fill-body .desc{
+        width: 80%;
+    }
+
+    .contact-title{
+        height: 35px;
+        font-size: 6rem;
+    }
+}
+
+@media (min-width:1000px){
+
+}
